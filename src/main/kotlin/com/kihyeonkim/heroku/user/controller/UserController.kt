@@ -30,7 +30,7 @@ class UserController {
 		return user.id
 	}
 
-	@GetMapping("/addUser")
+	@GetMapping("/deleteUser")
 	fun deleteUserInfo(
 		@RequestParam(name = "userId") userId: Long
 	): Boolean {
