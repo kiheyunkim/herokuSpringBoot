@@ -7,7 +7,7 @@ import javax.persistence.Id
 
 @Entity
 data class UserModel(
-	val userName: String,
-	val nickname: String,
+	val userName: String = "",
+	val nickname: String = "",
 	@Id @GeneratedValue(strategy = GenerationType.AUTO) var id: Long = 0
 )
