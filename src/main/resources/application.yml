@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://ec2-44-192-245-97.compute-1.amazonaws.com:5432/d5cmd7rmkm1ofd
+    username: zsgpchpllfmsii
+    password: 038c0aab1c77be674e32b1ac5529f213d1c15b2bee0ad24e0a996259586f21e4
