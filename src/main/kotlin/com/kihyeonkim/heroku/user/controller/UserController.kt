@@ -22,10 +22,10 @@ class UserController {
 
 	@GetMapping("/addUser")
 	fun addUserInfo(
-		@RequestParam(name = "userName") userName: String,
+		@RequestParam(name = "username") username: String,
 		@RequestParam(name = "nickname") nickname: String
 	): Long {
-		val user = userRepository.save(UserModel(userName, nickname))
+		val user = userRepository.save(UserModel(username, nickname))
 
 		return user.id
 	}
@@ -40,6 +40,6 @@ class UserController {
 			return false
 		}
 
-		return true;
+		return true
 	}
 }
